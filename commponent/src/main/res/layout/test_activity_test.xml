@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/titlebar"
+        layout="@layout/main_titlebar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:divider="@drawable/transparent"
+            android:showDividers="beginning|middle|end">
+            <Button
+                android:id="@+id/net_request"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="网络请求 参数"/>
+            <Button
+                android:id="@+id/upload_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="上传 图片"/>
+            <Button
+                android:id="@+id/upload_pic_param"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="网络请求 图片+参数"/>
+            <Button
+                android:id="@+id/download"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="下载文件"/>
+            <Button
+                android:id="@+id/test_eventbus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="测试 eventbus"/>
+            <Button
+                android:id="@+id/btn_dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="公共对话框"/>
+            <Button
+                android:id="@+id/btn_action_sheet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="仿ios actionsheet"/>
+            <Button
+                android:id="@+id/time_picker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="时间picker"/>
+            <Button
+                android:id="@+id/city_picker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="城市picker"/>
+            <Button
+                android:id="@+id/picker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="普通picker"/>
+            <Button
+                android:id="@+id/test1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="下拉刷新Fragment"/>
+            <Button
+                android:id="@+id/test2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="下拉刷新Activity"/>
+            <Button
+                android:id="@+id/test3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="上 下拉刷新Fragment" />
+            <Button
+                android:id="@+id/test4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="上 下拉刷新Activity" />
+            <Button
+                android:id="@+id/take_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="拍照、相册" />
+            <Button
+                android:id="@+id/look_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="查看图片" />
+            <Button
+                android:id="@+id/encrypt_decrypt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="公钥加密私钥解密" />
+            <Button
+                android:id="@+id/encrypt_decrypt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="私钥加密公钥解密" />
+            <Button
+                android:id="@+id/loc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="高德定位" />
+            <Button
+                android:id="@+id/share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="分享" />
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@android:color/black"
+                android:fitsSystemWindows="false">
+
+                <android.support.percent.PercentRelativeLayout
+                    android:id="@+id/prl_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@color/placeholder_color">
+
+                    <com.rent.zona.baselib.glide.GlideImageView
+                        android:id="@+id/glideImageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        app:layout_aspectRatio="178%"
+                        app:layout_widthPercent="100%"/>
+                </android.support.percent.PercentRelativeLayout>
+
+                <View
+                    android:id="@+id/maskView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/prl_image"
+                    android:layout_alignTop="@+id/prl_image"
+                    android:background="@color/circle_10_percent_transparent"
+                    android:visibility="visible"/>
+
+                <com.rent.zona.baselib.glide.progress.CircleProgressView
+                    android:id="@+id/progressView1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:progress="0"
+                    app:cpv_innerPadding="2dp"
+                    app:cpv_outerColor="@color/common_90_percent_transparent"
+                    app:cpv_outerSize="1dp"
+                    app:cpv_progressNormalColor="@color/no_color"
+                    app:cpv_progressReachColor="@color/common_white_alpha_90"
+                    app:cpv_progressStyle="FillInnerArc"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

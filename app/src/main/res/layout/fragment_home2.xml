@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/transparent"
+        android:layout_weight="41">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/white"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/home_bg3"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/home_bg4"/>
+            <LinearLayout
+                android:id="@+id/tab_layout_linear"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height200"
+                android:orientation="vertical"
+                android:gravity="center">
+                <com.fangyizhan.intersection.views.CircleImageView
+                    android:id="@+id/head_picture_iv"
+                    android:layout_width="@dimen/height45"
+                    android:layout_height="@dimen/height45"
+                    android:src="@mipmap/ic_launcher"/>
+                <TextView
+                    android:id="@+id/name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="昵称*"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="渡不了自己，何以渡人*"/>
+            </LinearLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/transparent"
+        android:layout_marginBottom="@dimen/height52"
+        android:layout_weight="59"></LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_sheet_item_height"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:textColor="@color/button_cancel"
+        android:textSize="@dimen/text_size_16"
+        android:textStyle="bold"/>
+
+    <include layout="@layout/common_divider_horizontal"/>
+
+</LinearLayout>

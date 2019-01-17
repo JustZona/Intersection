@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AppTitleBar">
+        <attr name="title"/>
+    </declare-styleable>
+    <declare-styleable name="NumberProgressBar">
+        <attr name="progress_current" format="integer"/>
+        <attr name="progress_max" format="integer"/>
+
+        <attr name="progress_unreached_color" format="color"/>
+        <attr name="progress_reached_color" format="color"/>
+
+        <attr name="progress_reached_bar_height" format="dimension"/>
+        <attr name="progress_unreached_bar_height" format="dimension"/>
+
+        <attr name="progress_text_size" format="dimension"/>
+        <attr name="progress_text_color" format="color"/>
+
+        <attr name="progress_text_offset" format="dimension"/>
+
+        <attr name="progress_text_visibility" format="enum">
+            <enum name="visible" value="0"/>
+            <enum name="invisible" value="1"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="CommonButton">
+        //按钮圆角大小
+        <attr name="button_radius" format="dimension|reference"></attr>
+        //按钮可用的颜色
+        <attr name="button_enable_solid_color" format="color|reference"></attr>
+        //按钮不可用的颜色
+        <attr name="button_unenable_solid_color" format="color|reference"></attr>
+        //按钮描边的颜色
+        <attr name="button_stroke_color" format="color|reference"></attr>
+        //不可用时 边框的颜色
+        <attr name="button_unenable_stroke_color" format="color|reference"></attr>
+        //按钮描边的宽度,为0时,描边不可用
+        <attr name="button_stroke_width" format="reference|dimension"></attr>
+        //按钮点击的颜色
+        <attr name="button_press_color" format="color|reference"></attr>
+
+        //设置自定义selector时,其余属性不可用
+        <attr name="button_click_selector" format="reference"></attr>
+    </declare-styleable>
+    <declare-styleable name="CommonEmptyView">
+        <attr name="image_margin_top" format="dimension"/>
+        <attr name="image_background" format="reference"/>
+        <attr name="emptyText" format="string"/>
+        <attr name="isTextVisible" format="boolean"/>
+        <attr name="isButtonVisible" format="boolean"/>
+        <attr name="buttonText" format="string"/>
+        <attr name="isWrapContent" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="MorseIndicator">
+        <!--普通小点的颜色-->
+        <attr name="normalColor" format="color"/>
+        <!--选中小点的颜色-->
+        <attr name="selectColor" format="color"/>
+        <!--阴影小点的颜色-->
+        <attr name="virtualColor" format="color"/>
+
+        <attr name="normalSize" format="dimension"/>
+        <attr name="selectSize" format="dimension"/>
+        <attr name="distanceSize" format="dimension"/>
+
+        <attr name="normalDrawable" format="reference"/>
+        <attr name="selectDrawable" format="reference"/>
+        <attr name="virtualDrawable" format="reference"/>
+
+        <attr name="android:gravity"/>
+
+    </declare-styleable>
+    <declare-styleable name="SwitchButton">
+        <attr name="kswThumbDrawable" format="reference" />
+        <attr name="kswThumbColor" format="color|reference" />
+        <attr name="kswThumbMargin" format="dimension|reference" />
+        <attr name="kswThumbMarginTop" format="dimension|reference" />
+        <attr name="kswThumbMarginBottom" format="dimension|reference" />
+        <attr name="kswThumbMarginLeft" format="dimension|reference" />
+        <attr name="kswThumbMarginRight" format="dimension|reference" />
+        <attr name="kswThumbWidth" format="dimension|reference" />
+        <attr name="kswThumbHeight" format="dimension|reference" />
+        <attr name="kswThumbRadius" format="dimension|reference" />
+        <attr name="kswBackRadius" format="dimension|reference" />
+        <attr name="kswBackDrawable" format="reference" />
+        <attr name="kswBackColor" format="color|reference" />
+        <attr name="kswFadeBack" format="boolean" />
+        <attr name="kswBackMeasureRatio" format="float" />
+        <attr name="kswAnimationDuration" format="integer" />
+        <attr name="kswTintColor" format="color|reference" />
+        <attr name="kswTextOn" format="string" />
+        <attr name="kswTextOff" format="string" />
+        <attr name="kswTextMarginH" format="dimension" />
+
+    </declare-styleable>
+    <declare-styleable name="CommonListItemView">
+        <!-- 列表展示的形式，单行列表：1,双行列表：2 -->
+        <attr name="item_style" format="integer" />
+        <attr name="leftSrc" format="reference" />
+        <attr name="rightSrc" format="reference" />
+        <attr name="rightSrcSize" format="dimension" />
+        <attr name="rightVisibility" format="enum">
+            <enum name="visible" value="0" />
+            <!-- Completely hidden, as if the view had not been added. -->
+            <enum name="gone" value="8" />
+        </attr>
+        <attr name="mainText" format="string" />
+        <attr name="mainTextColor" format="color|reference" />
+        <attr name="mainTextHintColor" format="color|reference" />
+        <attr name="hint" format="string" />
+        <attr name="mainTextSize" format="dimension" />
+        <attr name="detailText" format="string" />
+        <attr name="rightText" format="string" />
+        <attr name="rightTextSize" format="dimension" />
+        <attr name="rightTextColor" format="color|reference" />
+        <attr name="detailTextColor" format="color|reference" />
+        <attr name="detailTextLeftSrc" format="reference" />
+        <attr name="rightText_single_line" format="boolean" />
+        <attr name="left_text" format="string" />
+        <attr name="left_text_mar_left" format="dimension" />
+        <attr name="left_text_color" format="color|reference" />
+        <attr name="left_text_wide" format="dimension" />
+        <attr name="left_text_size" format="dimension" />
+        <attr name="edit_text" format="string" />
+        <attr name="edit_text_hint" format="string" />
+        <attr name="edit_text_size" format="dimension" />
+        <attr name="edit_text_hint_size" format="dimension" />
+        <attr name="edit_text_length" format="integer" />
+        <attr name="left_src_size" format="dimension" />
+        <attr name="left_src_mar_right" format="dimension" />
+        <attr name="left_src_mar_left" format="dimension" />
+        <attr name="switchbutton_visibility">
+            <!-- Visible on screen; the default value. -->
+            <enum name="visible" value="0" />
+            <!-- Not displayed, but taken into account during layout (space is left for it). -->
+            <enum name="invisible" value="1" />
+            <!-- Completely hidden, as if the view had not been added. -->
+            <enum name="gone" value="2" />
+        </attr>
+        <attr name="switchbutton_checked" format="boolean" />
+        <attr name="root_bg" format="reference" />
+    </declare-styleable>
+
+    <!--圆弧进度条-->
+    <declare-styleable name="CompletedView">
+        <attr name="radius" format="dimension"/>
+        <attr name="strokeWidth" format="dimension"/>
+        <attr name="circleColor" format="color"/>
+        <attr name="ringColor" format="color"/>
+        <attr name="ringBgColor" format="color"/>
+        <attr name="ringTextColor" format="color"/>
+        <attr name="textUnit" format="string"/>
+        <attr name="ringTextSize" format="dimension"/>
+        <attr name="curProgress" format="integer"/>
+    </declare-styleable>
+</resources>

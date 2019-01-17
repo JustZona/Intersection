@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="52dp">
+    <!--分割线-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/iv_color_10dp" />
+        <LinearLayout
+            android:background="#fff"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="50dp">
+
+
+            <CheckBox
+                android:id="@+id/isAllChecked_ck"
+                android:layout_marginLeft="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="全选"
+                android:textColor="@color/f35d14"
+                 android:textSize="@dimen/text_size_14"
+                />
+            <TextView
+                android:id="@+id/wxbb_or_plfs_tv01"
+                android:layout_marginLeft="18dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_width="74dp"
+                android:layout_height="26dp"
+                android:textSize="@dimen/text_size_11"
+                android:textColor="@color/f35d14"
+                android:text="审核通过"
+                android:background="@drawable/bg_tv_33f35d14"
+                />
+            <TextView
+                android:id="@+id/wxbb_or_plfs_tv02"
+                android:layout_marginLeft="16dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_width="74dp"
+                android:layout_height="26dp"
+                android:textSize="@dimen/text_size_11"
+                android:textColor="@color/f35d14"
+                android:text="审核驳回"
+                android:background="@drawable/bg_tv_33f35d14"
+                />
+            <TextView
+                android:id="@+id/wxbb_or_plfs_tv03"
+                android:layout_marginLeft="16dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_width="74dp"
+                android:layout_height="26dp"
+                android:textSize="@dimen/text_size_11"
+                android:textColor="@color/f35d14"
+                android:text="无效报备"
+                android:background="@drawable/bg_tv_33f35d14"
+                />
+            <!--分割线-->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/iv_color_10dp" />
+        </LinearLayout>
+    <!--分割线-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/iv_color_10dp" />
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+JvmtiExport can_access_local_variables 0
+JvmtiExport can_hotswap_or_post_breakpoint 0
+JvmtiExport can_post_on_exceptions 0
+# 172 ciObject found
+instanceKlass net/orfjackal/retrolambda/Transformers$$Lambda$1
+instanceKlass net/orfjackal/retrolambda/Transformers$$Lambda$5
+instanceKlass net/orfjackal/retrolambda/asm/Edge
+instanceKlass com/rent/zona/baselib/network/interceptor/HttpLoggingInterceptor$Logger$$Lambda$1
+instanceKlass sun/nio/fs/WindowsChannelFactory$2
+instanceKlass sun/nio/fs/AbstractPath$1
+instanceKlass java/util/Collections$EmptyIterator
+instanceKlass sun/nio/fs/WindowsPath$1
+instanceKlass net/orfjackal/retrolambda/interfaces/ClassHierarchyAnalyzer$$Lambda$4
+instanceKlass java/lang/invoke/LambdaForm$DMH
+instanceKlass net/orfjackal/retrolambda/asm/Frame
+instanceKlass net/orfjackal/retrolambda/lambdas/LambdaFactoryMethod
+instanceKlass net/orfjackal/retrolambda/Transformers$$Lambda$3
+instanceKlass java/lang/invoke/LambdaForm$MH
+instanceKlass net/orfjackal/retrolambda/Transformers$$Lambda$2
+instanceKlass java/util/regex/ASCII
+instanceKlass java/util/regex/Matcher
+instanceKlass java/util/regex/MatchResult
+instanceKlass java/lang/invoke/LambdaForm$MH
+instanceKlass java/lang/invoke/LambdaForm$BMH
+instanceKlass java/lang/invoke/LambdaForm$BMH
+instanceKlass java/lang/invoke/LambdaForm$BMH
+instanceKlass java/lang/invoke/LambdaForm$BMH
+instanceKlass java/lang/invoke/LambdaForm$BMH
+instanceKlass java/lang/invoke/LambdaForm$BMH
+instanceKlass java/lang/invoke/LambdaForm$MH
+instanceKlass java/lang/invoke/LambdaForm$MH
+instanceKlass java/lang/invoke/LambdaForm$DMH
+instanceKlass java/lang/invoke/LambdaForm$DMH
+instanceKlass java/lang/invoke/LambdaForm$MH
+instanceKlass java/lang/invoke/LambdaForm$DMH
+instanceKlass java/lang/invoke/LambdaForm$DMH
+instanceKlass java/lang/invoke/MethodHandleImpl$ArrayAccessor
+instanceKlass java/lang/invoke/LambdaForm$MH
+instanceKlass java/lang/invoke/LambdaForm$DMH
+instanceKlass net/orfjackal/retrolambda/lambdas/Types
+instanceKlass java/util/concurrent/LinkedBlockingDeque$Node
+instanceKlass com/rent/zona/baselib/network/interceptor/HttpLoggingInterceptor$Logger
+instanceKlass net/orfjackal/retrolambda/asm/Handle

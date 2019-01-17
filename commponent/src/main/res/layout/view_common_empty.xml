@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/empty_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/empty_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/ic_default_empty"
+            android:layout_marginTop="-60dp"/>
+        <!--android:layout_marginTop="@dimen/empty_view_margin_top"-->
+
+        <!--<com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:indicatorName="PacmanIndicator"
+            app:indicatorColor="@color/theme_color"
+            android:visibility="gone"
+            />-->
+        <ImageView
+            android:id="@+id/loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/empty_text"
+            style="@style/MyWidget.MultiLineText"
+            android:layout_below="@id/empty_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:text="@string/user_no_data"
+            android:textColor="@color/font_gray_98"
+            android:textSize="@dimen/text_size_14"/>
+
+        <Button
+            android:id="@+id/empty_operation"
+            style="@style/MyWidget.Button"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/empty_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:gravity="center"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+
+    <com.rent.zona.commponent.views.WebErrorView
+        android:id="@+id/error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+</merge>

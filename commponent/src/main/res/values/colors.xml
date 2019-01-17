@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="dark_blue">#3c5864</color>
+    <color name="dark_blue_50">#7f3c5864</color>
+    <color name="button_cancel">@color/red</color>
+    <color name="common_color">#00d9d3</color>
+    <color name="common_color_10">#1a00d9d3</color>
+    <color name="common_color_20">#3300d9d3</color>
+    <color name="common_color_40">#6600d9d3</color>
+    <color name="dark_blue_pressed">#2F3C4F</color>
+    <color name="new_matte_color">#990d131a</color>
+    <color name="common_matte_color">#b0000000</color>
+
+    <color name="animation_color_10">#1a00B7FF</color>
+    <color name="animation_color_20">#3300B7FF</color>
+    <color name="animation_color_30">#4d00B7FF</color>
+    <color name="animation_color_40">#6600B7FF</color>
+    <color name="animation_color">#00B7FF</color>
+
+    <color name="no_color">#00000000</color>
+    <color name="almost_transparent">#01000000</color>
+    <color name="common_00_percent_transparent">#00000000</color>
+    <color name="common_10_percent_transparent">#1a000000</color>
+    <color name="common_20_percent_transparent">#33000000</color>
+    <color name="common_30_percent_transparent">#4d000000</color>
+    <color name="common_40_percent_transparent">#66000000</color>
+    <color name="common_50_percent_transparent">#7f000000</color>
+    <color name="common_60_percent_transparent">#99000000</color>
+    <color name="common_70_percent_transparent">#b3000000</color>
+    <color name="common_80_percent_transparent">#cc000000</color>
+    <color name="common_90_percent_transparent">#e5000000</color>
+
+    <color name="common_white_alpha_6">#0fffffff</color>
+    <color name="common_white_alpha_10">#1affffff</color>
+    <color name="common_white_alpha_15">#26ffffff</color>
+    <color name="common_white_alpha_20">#33ffffff</color>
+    <color name="common_white_alpha_30">#4dffffff</color>
+    <color name="common_white_alpha_40">#66ffffff</color>
+    <color name="common_white_alpha_50">#7fffffff</color>
+    <color name="common_white_alpha_60">#99ffffff</color>
+    <color name="common_white_alpha_70">#b3ffffff</color>
+    <color name="common_white_alpha_80">#ccffffff</color>
+    <color name="common_white_alpha_90">#E5ffffff</color>
+    <color name="common_white_alpha_100">#FFffffff</color>
+
+    <color name="circle_100_percent_transparent">#ffffffff</color>
+    <color name="circle_90_percent_transparent">#e6ffffff</color>
+    <color name="circle_80_percent_transparent">#ccffffff</color>
+    <color name="circle_70_percent_transparent">#b3ffffff</color>
+    <color name="circle_60_percent_transparent">#99ffffff</color>
+    <color name="circle_50_percent_transparent">#7fffffff</color>
+    <color name="circle_40_percent_transparent">#66ffffff</color>
+    <color name="circle_30_percent_transparent">#4dffffff</color>
+    <color name="circle_20_percent_transparent">#33ffffff</color>
+    <color name="circle_10_percent_transparent">#1affffff</color>
+
+    <color name="sweep_100_percent_transparent">#ff487081</color>
+    <color name="sweep_90_percent_transparent">#e6487081</color>
+    <color name="sweep_80_percent_transparent">#cc487081</color>
+    <color name="sweep_70_percent_transparent">#b3487081</color>
+    <color name="sweep_60_percent_transparent">#99487081</color>
+    <color name="sweep_50_percent_transparent">#7f487081</color>
+    <color name="sweep_40_percent_transparent">#66487081</color>
+    <color name="sweep_30_percent_transparent">#4d487081</color>
+    <color name="sweep_20_percent_transparent">#33487081</color>
+    <color name="sweep_10_percent_transparent">#1a487081</color>
+    <color name="gray_f3">#f3f3f3</color>   <!-- 灰色 -->
+    <color name="white">#ffFFFFFF</color>  <!-- 白色 -->
+    <color name="yellow">#fbc02d</color> <!-- 黄色 -->
+    <color name="gold">#FFD700</color>   <!-- 金色 -->
+    <color name="orange">#f57c00</color> <!-- 橙色 -->
+    <color name="red">#d01716</color>    <!-- 红色 -->
+    <color name="gray">#808080</color>   <!-- 灰色 -->
+    <color name="green">#0a7e07</color>  <!-- 绿色 -->
+    <color name="blue">#0DB6E0</color>   <!-- 蓝色 -->
+    <color name="black">#ff000000</color>  <!-- 黑色 -->
+    <color name="line_btn">#BBBBBB</color>
+    <color name="background_gray1">#EBEBEB</color>
+    <color name="imm">#ffbf3e</color>//立即体验颜色
+
+<!--相册-->
+    <color name="multiple_image_select_primary">@color/colorPrimary</color>
+    <color name="multiple_image_select_primaryDark">@color/colorPrimaryDark</color>
+    <color name="multiple_image_select_primaryLight">#C8E6C9</color>
+    <color name="multiple_image_select_accent">@color/colorAccent</color>
+    <color name="multiple_image_select_primaryText">#212121</color>
+    <color name="multiple_image_select_secondaryText">#727272</color>
+    <color name="multiple_image_select_divider">#B6B6B6</color>
+    <color name="multiple_image_select_toolbarPrimaryText">#FFFFFF</color>
+    <color name="multiple_image_select_albumTextBackground">#99FFFFFF</color>
+    <color name="multiple_image_select_imageSelectBackground">#000000</color>
+    <color name="multiple_image_select_buttonText">#FFFFFF</color>
+
+
+
+    <color name="theme_color">#ffF35C13</color>
+
+    <color name="common_title_textcolor">@color/common_dark</color>
+    <color name="common_title_bottome_line">@color/common_divider_color</color>
+    <color name="common_title_bg_color">@color/white</color>
+    <color name="bg_half_transparent">#996e6d6d</color>
+
+    <color name="common_pressed">#f7f7f7</color>
+    <color name="common_dark">#333333</color>
+    <color name="common_divider_color">#E2E2E2</color>
+    <color name="common_bg">#FFF0F0F0</color>
+    <color name="common_red">#F15A4A</color>
+    <color name="common_disable">#cccccc</color>
+    <color name="common_gray">#9f9f9f</color>
+    <color name="light_gray">#cccccc</color>
+    <color name="gray_nine">#999999</color>
+    <color name="gray_e">#ffeeeeee</color>
+    <color name="dark_gray">#4c4c4c</color>
+    <color name="border">#dddddd</color>
+
+    <color name="light_green">#b0c600</color>
+    <color name="radio_button_selected_color">@color/light_green</color>
+    <!-- 标签颜色 -->
+    <!--<color name="tab_group_bg">@color/radio_button_selected_color</color>-->
+    <color name="tab_text_color">@color/font_gray</color>
+    <color name="tab_text_select_color">@color/theme_color</color>
+
+    <color name="font_accent">#333333</color><!--#313131-->
+    <color name="font_accent1">#323232</color><!--#313131-->
+    <color name="font_gray_deep">#ff666666</color><!--#626262-->
+    <color name="font_gray">#ff999999</color>
+    <color name="font_special">@color/theme_color</color>
+    <color name="font_special_2">#ffFDAA1C</color>
+    <color name="font_prompt">#B7C2D8</color>
+    <color name="font_gray_98">#989898</color>
+    <color name="c99000000">#99000000</color>
+
+    <color name="btn_empty_bg">@color/theme_color</color>
+
+
+    <color name="colorPrimary">#33aaff</color>
+    <color name="colorPrimaryDark">#2299ee</color>
+    <color name="colorPrimaryOverlay">#cc0094ff</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="placeholder_color">#1A000000</color>
+
+    <!--字体颜色（102，102，102）-->
+    <color name="text_color_size_12">#666666</color>
+    <!--标题字体颜色（0，0，0）-->
+    <color name="text_color_title">#333333</color>
+    <!--标题字体颜色（0，0，0）-->
+    <color name="text_color_size_14">#333333</color>
+    <!--标题字体颜色（153，153，153-->
+    <color name="text_color_title_hs">#999999</color>
+    <!--分割线颜色（231，231，231）-->
+    <color name="iv_color_10dp">#E7E7E7</color>
+
+
+    <!--首页红色字体 -->
+    <color name="text_color_home_red">#F24949</color>
+    <!--首页蓝色字体 -->
+    <color name="text_color_home_bule">#587cf6</color>
+    <!--首页黄色字体 -->
+    <color name="text_color_home_yellow">#ffac40</color>
+    <!--首页绿色字体 -->
+    <color name="text_color_home_green">#87cc01</color>
+    <!--首页绿色字体 -->
+    <color name="f35d14">#f35d14</color>
+    <!--首页绿色字体 -->
+    <color name="bg_color_f4f4f4">#f4f4f4</color>
+
+    <!--首页卖房背景 -->
+    <color name="bg_color_home_orange">#FFEFE7</color>
+    <!--首页出租背景 -->
+    <color name="bg_color_home_blue">#DEFFF4</color>
+    <!--首页买房背景 -->
+    <color name="bg_color_home_purple">#FFE5F8</color>
+    <!--首页租房背景 -->
+    <color name="bg_color_home_green">#D2FFE7</color>
+
+</resources>

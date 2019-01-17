@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:gravity="center">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/height15"
+        android:paddingBottom="@dimen/height15"
+        android:gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/right_icon"
+        android:layout_width="@dimen/height22"
+        android:layout_height="@dimen/height22"
+        android:src="@drawable/condition_selected"
+        android:visibility="visible"
+        />
+    <TextView
+        android:id="@+id/condition_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/popup_mul_condition_textcolor"
+        android:textSize="@dimen/size15"
+        tools:text="西餐厅"
+        android:layout_weight="1"
+
+        />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:paddingRight="10dp"
+        android:layout_height="1dp"
+        android:background="#eeeeee"></View>
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="5dp"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+<ImageView
+    android:id="@android:id/icon"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/tab_icon_size"
+    android:layout_centerHorizontal="true"
+    android:src="@drawable/ic_dialog_close"/>
+    <TextView
+        android:id="@android:id/text1"
+        android:layout_below="@android:id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_12"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/tab_text_color_sel"
+        android:text="hehe"/>
+    <TextView
+        android:id="@+id/tip_text"
+        style="@style/MyWidget.TabTipText"
+        android:layout_toRightOf="@android:id/icon"
+        android:layout_alignTop="@android:id/icon"
+        tools:text="5"
+        android:visibility="gone"/>
+    <View
+        android:id="@+id/tip"
+        style="@style/MyWidget.TabTip"
+        android:layout_toRightOf="@android:id/icon"
+        android:layout_alignTop="@android:id/icon"
+        android:visibility="gone"/>
+</RelativeLayout>

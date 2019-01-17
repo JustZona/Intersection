@@ -1,0 +1,196 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 362336 bytes for Chunk::new
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (allocation.cpp:390), pid=8112, tid=0x000000000000077c
+#
+# JRE version: OpenJDK Runtime Environment (8.0_112-b06) (build 1.8.0_112-release-b06)
+# Java VM: OpenJDK 64-Bit Server VM (25.112-b06 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000000058acf000):  JavaThread "C2 CompilerThread0" daemon [_thread_in_native, id=1916, stack(0x00000000592e0000,0x00000000593e0000)]
+
+Stack: [0x00000000592e0000,0x00000000593e0000]
+[error occurred during error reporting (printing stack bounds), id 0xc0000005]
+
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+
+
+Current CompileTask:
+C2:    606  822       4       net.orfjackal.retrolambda.asm.ClassReader::readField (664 bytes)
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x0000000058b31000 JavaThread "Service Thread" daemon [_thread_blocked, id=9616, stack(0x00000000596e0000,0x00000000597e0000)]
+  0x0000000058b2d800 JavaThread "C1 CompilerThread2" daemon [_thread_blocked, id=3136, stack(0x0000000059500000,0x0000000059600000)]
+  0x0000000058ad4800 JavaThread "C2 CompilerThread1" daemon [_thread_in_vm, id=764, stack(0x0000000059090000,0x0000000059190000)]
+=>0x0000000058acf000 JavaThread "C2 CompilerThread0" daemon [_thread_in_native, id=1916, stack(0x00000000592e0000,0x00000000593e0000)]
+  0x0000000058aba800 JavaThread "Attach Listener" daemon [_thread_blocked, id=9496, stack(0x00000000591e0000,0x00000000592e0000)]
+  0x000000005777f000 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=3176, stack(0x0000000058f90000,0x0000000059090000)]
+  0x000000005775c000 JavaThread "Finalizer" daemon [_thread_blocked, id=9060, stack(0x00000000589b0000,0x0000000058ab0000)]
+  0x0000000057715000 JavaThread "Reference Handler" daemon [_thread_blocked, id=3552, stack(0x0000000058800000,0x0000000058900000)]
+  0x00000000024db800 JavaThread "main" [_thread_in_Java, id=7560, stack(0x00000000026f0000,0x00000000027f0000)]
+
+Other Threads:
+  0x000000005770d800 VMThread [stack: 0x0000000058670000,0x0000000058770000] [id=8988]
+  0x0000000058b35000 WatcherThread [stack: 0x0000000059800000,0x0000000059900000] [id=8992]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap:
+ PSYoungGen      total 38400K, used 20000K [0x00000000d5a00000, 0x00000000d8480000, 0x0000000100000000)
+  eden space 33280K, 60% used [0x00000000d5a00000,0x00000000d6d883d8,0x00000000d7a80000)
+  from space 5120K, 0% used [0x00000000d7f80000,0x00000000d7f80000,0x00000000d8480000)
+  to   space 5120K, 0% used [0x00000000d7a80000,0x00000000d7a80000,0x00000000d7f80000)
+ ParOldGen       total 87552K, used 0K [0x0000000080e00000, 0x0000000086380000, 0x00000000d5a00000)
+  object space 87552K, 0% used [0x0000000080e00000,0x0000000080e00000,0x0000000086380000)
+ Metaspace       used 5941K, capacity 6224K, committed 6400K, reserved 1056768K
+  class space    used 656K, capacity 744K, committed 768K, reserved 1048576K
+
+Card table byte_map: [0x0000000011bb0000,0x0000000011fb0000] byte_map_base: 0x00000000117a9000
+
+Marking Bits: (ParMarkBitMap*) 0x000000005fb418f0
+ Begin Bits: [0x00000000129f0000, 0x00000000149b8000)
+ End Bits:   [0x00000000149b8000, 0x0000000016980000)
+
+Polling page: 0x0000000000130000
+
+CodeCache: size=245760Kb used=3237Kb max_used=3240Kb free=242522Kb
+ bounds [0x00000000027f0000, 0x0000000002b20000, 0x00000000117f0000]
+ total_blobs=1136 nmethods=839 adapters=211
+ compilation: enabled
+
+Compilation events (10 events):
+Event: 0.602 Thread 0x0000000058b2d800  834       3       java.lang.invoke.LambdaForm$MH/2117255219::linkToTargetMethod (9 bytes)
+Event: 0.602 Thread 0x0000000058b2d800 nmethod 834 0x0000000002b17590 code [0x0000000002b17700, 0x0000000002b17b78]
+Event: 0.602 Thread 0x0000000058b2d800  835       3       java.lang.invoke.LambdaForm$DMH/2093631819::invokeStatic_L_L (14 bytes)
+Event: 0.602 Thread 0x0000000058b2d800 nmethod 835 0x0000000002b16d90 code [0x0000000002b16f20, 0x0000000002b17458]
+Event: 0.603 Thread 0x0000000058ad4800 nmethod 832 0x0000000002b163d0 code [0x0000000002b16520, 0x0000000002b16a18]
+Event: 0.603 Thread 0x0000000058ad4800  836 %     4       net.orfjackal.retrolambda.asm.ClassReader::readCode @ 74 (3351 bytes)
+Event: 0.603 Thread 0x0000000058b2d800  839       3       java.util.HashMap::<init> (11 bytes)
+Event: 0.603 Thread 0x0000000058b2d800 nmethod 839 0x0000000002b15f90 code [0x0000000002b16100, 0x0000000002b16310]
+Event: 0.603 Thread 0x0000000058b2d800  840       3       net.orfjackal.retrolambda.asm.ClassWriter::newString (70 bytes)
+Event: 0.604 Thread 0x0000000058b2d800 nmethod 840 0x0000000002b1b8d0 code [0x0000000002b1ba80, 0x0000000002b1be98]
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (7 events):
+Event: 0.256 Thread 0x00000000024db800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x000000000299f9e4 method=net.orfjackal.retrolambda.asm.ClassReader.readField(Lnet/orfjackal/retrolambda/asm/ClassVisitor;Lnet/orfjackal/retrolambda/asm/Context;I)I @ 68
+Event: 0.257 Thread 0x00000000024db800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x000000000294b3e0 method=net.orfjackal.retrolambda.asm.ClassReader.readUTF8(I[C)Ljava/lang/String; @ 7
+Event: 0.428 Thread 0x00000000024db800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00000000029851a0 method=net.orfjackal.retrolambda.asm.ClassVisitor.visitField(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)Lnet/orfjackal/retrolambda/asm/FieldVisitor; @ºNãç‡?
+Event: 0.517 Thread 0x00000000024db800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00000000029123f8 method=sun.nio.fs.WindowsPathParser.isSlash(C)Z @ 9
+Event: 0.548 Thread 0x00000000024db800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00000000029d4a54 method=net.orfjackal.retrolambda.asm.ClassReader.readUTF(II[C)Ljava/lang/String; @ 77
+Event: 0.549 Thread 0x00000000024db800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x000000000294cfc8 method=net.orfjackal.retrolambda.asm.ClassReader.readUTF(II[C)Ljava/lang/String; @ 77
+Event: 0.574 Thread 0x00000000024db800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x0000000002ae4988 method=net.orfjackal.retrolambda.asm.Item.isEqualTo(Lnet/orfjackal/retrolambda/asm/Item;)Z @ 345
+
+Internal exceptions (10 events):
+Event: 0.518 Thread 0x00000000024db800 Exception <a 'sun/nio/fs/WindowsException'> (0x00000000d66c4a68) thrown at [C:\src\android\AOSP-openjdk\external\jetbrains\jdk\hotspot\src\share\vm\prims\jni.cpp, line 709]
+Event: 0.518 Thread 0x00000000024db800 Exception <a 'sun/nio/fs/WindowsException'> (0x00000000d66c5820) thrown at [C:\src\android\AOSP-openjdk\external\jetbrains\jdk\hotspot\src\share\vm\prims\jni.cpp, line 709]
+Event: 0.518 Thread 0x00000000024db800 Exception <a 'sun/nio/fs/WindowsException'> (0x00000000d66c6038) thrown at [C:\src\android\AOSP-openjdk\external\jetbrains\jdk\hotspot\src\share\vm\prims\jni.cpp, line 709]
+Event: 0.518 Thread 0x00000000024db800 Exception <a 'sun/nio/fs/WindowsException'> (0x00000000d66c6de0) thrown at [C:\src\android\AOSP-openjdk\external\jetbrains\jdk\hotspot\src\share\vm\prims\jni.cpp, line 709]
+Event: 0.518 Thread 0x00000000024db800 Exception <a 'sun/nio/fs/WindowsException'> (0x00000000d66c75c8) thrown at [C:\src\android\AOSP-openjdk\external\jetbrains\jdk\hotspot\src\share\vm\prims\jni.cpp, line 709]
+Event: 0.518 Thread 0x00000000024db800 Exception <a 'sun/nio/fs/WindowsException'> (0x00000000d66c8350) thrown at [C:\src\android\AOSP-openjdk\external\jetbrains\jdk\hotspot\src\share\vm\prims\jni.cpp, line 709]
+Event: 0.518 Thread 0x00000000024db800 Exception <a 'sun/nio/fs/WindowsException'> (0x00000000d66c8b08) thrown at [C:\src\android\AOSP-openjdk\external\jetbrains\jdk\hotspot\src\share\vm\prims\jni.cpp, line 709]
+Event: 0.518 Thread 0x00000000024db800 Exception <a 'sun/nio/fs/WindowsException'> (0x00000000d66c9880) thrown at [C:\src\android\AOSP-openjdk\external\jetbrains\jdk\hotspot\src\share\vm\prims\jni.cpp, line 709]
+Event: 0.598 Thread 0x00000000024db800 Exception <a 'sun/nio/fs/WindowsException'> (0x00000000d6b6a7f8) thrown at [C:\src\android\AOSP-openjdk\external\jetbrains\jdk\hotspot\src\share\vm\prims\jni.cpp, line 709]
+Event: 0.600 Thread 0x00000000024db800 Exception <a 'sun/nio/fs/WindowsException'> (0x00000000d6b90408) thrown at [C:\src\android\AOSP-openjdk\external\jetbrains\jdk\hotspot\src\share\vm\prims\jni.cpp, line 709]
+
+Events (10 events):
+Event: 0.549 Thread 0x00000000024db800 Uncommon trap: trap_request=0xffffff65 fr.pc=0x000000000294cfc8
+Event: 0.549 Thread 0x00000000024db800 DEOPT PACKING pc=0x000000000294cfc8 sp=0x00000000027ee630
+Event: 0.549 Thread 0x00000000024db800 DEOPT UNPACKING pc=0x000000000283556a sp=0x00000000027ee5c0 mode 2
+Event: 0.568 Executing VM operation: ForceSafepoint
+Event: 0.568 Executing VM operation: ForceSafepoint done
+Event: 0.574 Thread 0x00000000024db800 Uncommon trap: trap_request=0xffffff65 fr.pc=0x0000000002ae4988
+Event: 0.574 Thread 0x00000000024db800 DEOPT PACKING pc=0x0000000002ae4988 sp=0x00000000027ee4d0
+Event: 0.574 Thread 0x00000000024db800 DEOPT UNPACKING pc=0x000000000283556a sp=0x00000000027ee468 mode 2
+Event: 0.583 loading class net/orfjackal/retrolambda/util/Bytecode
+Event: 0.583 loading class net/orfjackal/retrolambda/util/Bytecode done
+
+
+Dynamic libraries:
+0x000000013f110000 - 0x000000013f141000 	D:\install\Android\Android Studio\jre\bin\java.exe
+0x00000000778b0000 - 0x0000000077a5a000 	C:\Windows\SYSTEM32\ntdll.dll
+0x00000000771b0000 - 0x00000000772cf000 	C:\Windows\system32\kernel32.dll
+0x000007fefe080000 - 0x000007fefe0ea000 	C:\Windows\system32\KERNELBASE.dll
+0x000007feff820000 - 0x000007feff8fb000 	C:\Windows\system32\ADVAPI32.dll
+0x000007feff5a0000 - 0x000007feff63f000 	C:\Windows\system32\msvcrt.dll
+0x000007feff3b0000 - 0x000007feff3cf000 	C:\Windows\SYSTEM32\sechost.dll
+0x000007feffa90000 - 0x000007feffbbd000 	C:\Windows\system32\RPCRT4.dll
+0x00000000772d0000 - 0x00000000773ca000 	C:\Windows\system32\USER32.dll
+0x000007fefe3c0000 - 0x000007fefe427000 	C:\Windows\system32\GDI32.dll
+0x000007fefe430000 - 0x000007fefe43e000 	C:\Windows\system32\LPK.dll
+0x000007fefe2f0000 - 0x000007fefe3bb000 	C:\Windows\system32\USP10.dll
+0x000007fefc690000 - 0x000007fefc884000 	C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.18837_none_fa3b1e3d17594757\COMCTL32.dll
+0x000007feff4f0000 - 0x000007feff561000 	C:\Windows\system32\SHLWAPI.dll
+0x000007feffa60000 - 0x000007feffa8e000 	C:\Windows\system32\IMM32.DLL
+0x000007feff950000 - 0x000007feffa59000 	C:\Windows\system32\MSCTF.dll
+0x0000000060320000 - 0x00000000603f2000 	D:\install\Android\Android Studio\jre\jre\bin\msvcr100.dll
+0x000000005f380000 - 0x000000005fbbc000 	D:\install\Android\Android Studio\jre\jre\bin\server\jvm.dll
+0x000007fef3e20000 - 0x000007fef3e29000 	C:\Windows\system32\WSOCK32.dll
+0x000007feff900000 - 0x000007feff94d000 	C:\Windows\system32\WS2_32.dll
+0x000007feff570000 - 0x000007feff578000 	C:\Windows\system32\NSI.dll
+0x000007fefaf90000 - 0x000007fefafcb000 	C:\Windows\system32\WINMM.dll
+0x000007fefce50000 - 0x000007fefce5c000 	C:\Windows\system32\VERSION.dll
+0x0000000077a80000 - 0x0000000077a87000 	C:\Windows\system32\PSAPI.DLL
+0x000007fef0d30000 - 0x000007fef0d3f000 	D:\install\Android\Android Studio\jre\jre\bin\verify.dll
+0x000007fef0d00000 - 0x000007fef0d29000 	D:\install\Android\Android Studio\jre\jre\bin\java.dll
+0x000007fef0750000 - 0x000007fef0766000 	D:\install\Android\Android Studio\jre\jre\bin\zip.dll
+0x000007fefe620000 - 0x000007feff3aa000 	C:\Windows\system32\SHELL32.dll
+0x000007fefe0f0000 - 0x000007fefe2ec000 	C:\Windows\system32\ole32.dll
+0x000007fefdd20000 - 0x000007fefdd2f000 	C:\Windows\system32\profapi.dll
+0x000007fef0730000 - 0x000007fef074a000 	D:\install\Android\Android Studio\jre\jre\bin\net.dll
+0x000007fefd540000 - 0x000007fefd595000 	C:\Windows\system32\mswsock.dll
+0x000007fefd530000 - 0x000007fefd537000 	C:\Windows\System32\wship6.dll
+0x000007fef0710000 - 0x000007fef0721000 	D:\install\Android\Android Studio\jre\jre\bin\nio.dll
+
+VM Arguments:
+jvm_args: -Dretrolambda.bytecodeVersion=50 -Dretrolambda.classpath=C:\Users\Administrator\.android\build-cache\8ecf6e9ca0589036f8fd98dac93db39f20e3e1f2\output\jars\classes.jar;C:\Users\Administrator\.android\build-cache\f8c2f258714050cbe00de2edcf1a096f88b0d215\output\jars\classes.jar;C:\Users\Administrator\.android\build-cache\25407aa4be84f73cfc70c573fb8619437d94660a\output\jars\classes.jar;C:\Users\Administrator\.android\build-cache\49a288c65adfcd3ca9357c87da8de1c0a8872c62\output\jars\classes.jar;C:\Users\Administrator\.android\build-cache\ca71c69218174e53f40ad476b3dc44cf7ff1c38d\output\jars\classes.jar;C:\Users\Administrator\.android\build-cache\3a80f5ff48741f1a7efb3ea597726809fb007987\output\jars\classes.jar;C:\Users\Administrator\.android\build-cache\1225df956148a2077911d381153ba065b7bbeb6c\output\jars\classes.jar;C:\Users\Administrator\.android\build-cache\2f9c27b6914f9b8691e9c6398eaaebd06432930e\output\jars\classes.jar;C:\Users\Administrator\.android\build-cache\8948219fb1ad4718ba969480dede7d91201c80f0\output\jars\classes.jar;C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\junit\junit\4.12\2973d150c0dc1fefe998f834810d68f278ea58ec\junit-4.12.jar;C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.hamcrest\hamcrest-core\1.3\42a25dc3219429f0e5d060061f71acb49bf010a0\hamcrest-core-1.3.jar;D:\install\Android\Android Studio\gradle\m2repository\net\sf\kxml\kxml2\2.3.0\kxml2-2.3.0.jar;C:\Users\Administrator\.android\build-cache\fb567c7c9a28e7fe97d75e2f6a0dd40ad54ceedd\output\jars\classes.jar;C:\Users\Administrator\.android\build-cache\2cb228cacc811f3d35647e4249cf29a3ca8fb8af\output\jars\classes.jar;C:\Users\Administrator\.android\build-cache\a5642e8e723f1b0d18dc5adee25736ac99704242\output\jars\classes.jar;C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\commons-cli\commons-cli\1.2\2bf96b7aa8b611c177d329452af1dc933e14501c\commons-cli-1.2.jar;C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\2.0.1\516c03b21d50a644d538de0f0369c620989cd8f0\jsr305-Dretrolambda.inputDir=D:\project\BestHouse\baselib\build\retrolambda\release -Dretrolambda.outputDir=D:\project\BestHouse\baselib\build\intermediates\classes\release -Dfile.encoding=GBK -Duser.country=CN -Duser.language=zh -Duser.variant 
+java_command: net.orfjackal.retrolambda.Main
+java_class_path (initial): C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\net.orfjackal.retrolambda\retrolambda\2.0.6\222dd3b86257569bf8bbec5a1a5179a6413da7b6\retrolambda-2.0.6.jar
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=D:\install\Java\jdk1.8.0_144
+CLASSPATH=.;D:\install\Java\jdk1.8.0_144\lib\dt.jar;D:\install\Java\jdk1.8.0_144\lib\tools.jar;
+PATH=D:\install\Java\jdk1.8.0_144\bin;D:\install\Java\jdk1.8.0_144\jre\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;D:\install\Git\cmd;D:\install\Android\AppData\Local\Android\sdk1\platform-tools;D:\install\Android\AppData\Local\Android\sdk1\tools;
+USERNAME=Administrator
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 158 Stepping 9, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 , 64 bit Build 7601 (6.1.7601.23915)
+
+CPU:total 4 (4 cores per cpu, 1 threads per core) family 6 model 158 stepping 9, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, 3dnowpref, lzcnt, tsc, tscinvbit, bmi1, bmi2, adx
+
+Memory: 4k page, physical 8323752k(859232k free), swap 8321892k(5132k free)
+
+vm_info: OpenJDK 64-Bit Server VM (25.112-b06) for windows-amd64 JRE (1.8.0_112-release-b06), built on Dec  8 2016 00:54:26 by "builder" with MS VC++ 10.0 (VS2010)
+
+time: Mon Jul 02 18:01:22 2018
+elapsed time: 0 seconds (0d 0h 0m 0s)
+

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        tools:context=".activities.MainActivity">
+    <com.fangyizhan.intersection.views.SlideOrNoViewPager
+        android:id="@+id/main_content_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray1"
+        android:layout_marginBottom="@dimen/height49">
+
+    </com.fangyizhan.intersection.views.SlideOrNoViewPager>
+
+<!--android:background="@drawable/home_bg_round"-->
+    <LinearLayout
+        android:layout_width="@dimen/height68"
+        android:layout_height="@dimen/height68"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/home_bg_round"
+        android:layout_alignParentBottom="true">
+
+    </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height49"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/home_bg"
+                android:gravity="bottom"
+                android:layout_weight="1">
+
+
+                <TextView
+                    android:id="@+id/main_msg_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="1dp"
+                    android:drawablePadding="2dp"
+                    android:layout_marginTop="5dp"
+                    android:drawableTop="@drawable/main_home_selector"
+                    android:textSize="@dimen/size13"
+                    android:layout_gravity="center"
+                    android:text="消息"
+                    android:textColor="@drawable/tabitem_txt_sel" />
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="@dimen/height60"
+                android:layout_height="@dimen/height68"
+                android:layout_marginBottom="@dimen/height1"
+                android:layout_gravity="bottom">
+
+
+                <TextView
+                    android:id="@+id/main_find_tv"
+                    android:textSize="@dimen/size13"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentBottom="true"
+                    android:text="发现"
+                    android:gravity="center_horizontal"
+                    android:drawableTop="@drawable/main_find_selector"
+                    android:drawablePadding="@dimen/height5"
+                    android:textColor="@drawable/tabitem_txt_sel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+            </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/home_bg"
+        android:gravity="bottom"
+        android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/main_home_tv"
+                    android:padding="1dp"
+                    android:textSize="@dimen/size13"
+                    android:drawablePadding="2dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:text="首页"
+                    android:drawableTop="@drawable/main_home_selector"
+                    android:textColor="@drawable/tabitem_txt_sel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   />
+
+    </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>

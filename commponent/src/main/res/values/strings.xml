@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">commponent</string>
+    <string name="delete">删除</string>
+    <string name="know">知道了</string>
+    <string name="go_open">去开启</string>
+
+    <!-- error page -->
+    <string name="page_can_not_open">哎呀，出错了!</string>
+    <string name="possible_reason">可能的原因有:</string>
+    <string name="network_connection_issue">1.网络连接出现问题：</string>
+    <string name="network_settings">设置网络>></string>
+    <string name="web_exception">2.该内容不存在或出现故障</string>
+    <string name="refresh_retry">刷新试试</string>
+
+    <string name="user_no_data">暂无数据</string>
+
+    <string name="pickerview_cancel">取消</string>
+    <string name="pickerview_submit">确定</string>
+    <string name="pickerview_year">年</string>
+    <string name="pickerview_month">月</string>
+    <string name="pickerview_day">日</string>
+    <string name="pickerview_hours">时</string>
+    <string name="pickerview_minutes">分</string>
+    <string name="pickerview_seconds">秒</string>
+    <string name="tag_year">year</string>
+    <string name="tag_month">month</string>
+    <string name="tag_day">day</string>
+    <string name="tag_hour">hour</string>
+    <string name="tag_minute">minute</string>
+    <string name="tag_second">second</string>
+    <!--相册-->
+    <string name="album_error_null_cursor">哎呀，出什么事了！</string>
+    <string name="album_view">选择图片</string>
+    <string name="album_permission_info">应用程序需要存储权限才能查看图像。</string>
+    <string name="album_ok">确定</string>
+    <string name="album_permission_force">应用程序需要存储权限才能查看图像。点击设置并转到权限授予权限。</string>
+    <string name="album_permission_settings">设置</string>
+    <string name="album_permission_package">package</string>
+    <string name="album_image_view">点击选择图像</string>
+    <string name="album_selected">选择</string>
+    <string name="album_limit_exceeded">可以选择最大的%d图像</string>
+    <!--TakePhoto-->
+    <string name="tip_type_not_image">选择的不是图片</string>
+    <string name="tip_no_camera">没有相机</string>
+    <string name="tip_tips">提示</string>
+    <string name="tip_compress">正在压缩照片...</string>
+    <string name="tip_compress_failed">"%1$s 图片压缩失败:%2$s picturePath:%3$s"</string>
+    <string name="msg_crop_failed">"有裁切失败的图片"</string>
+    <string name="msg_compress_failed">"有压缩失败的图片"</string>
+    <string name="msg_crop_canceled">" 取消裁切"</string>
+    <string name="msg_operation_canceled">"操作被取消"</string>
+    <string name="tip_permission_camera">没有使用相机的权限，请在权限管理中开启</string>
+    <string name="tip_permission_storage">没有使用SD卡的权限，请在权限管理中开启</string>
+    <string name="tip_permission_camera_storage">没有使用相机和SD卡的权限，请在权限管理中开启</string>
+</resources>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+<ImageView
+    android:id="@+id/layout_error"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:maxWidth="120dp"
+    android:maxHeight="120dp"
+    android:src="@drawable/web_error_icon"
+    android:layout_marginBottom="@dimen/common_horizon_margin"
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/page_can_not_open"
+        android:textColor="@color/font_accent"
+        android:textSize="@dimen/text_size_18"/>
+    <LinearLayout
+        android:id="@+id/layout_text_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/common_divider_color"/>
+
+        <TextView
+            android:id="@+id/tv_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="25dp"
+            android:text="@string/possible_reason"
+            android:textColor="@color/font_gray_98"
+            android:textSize="@dimen/text_size_14"/>
+
+        <LinearLayout
+            android:id="@+id/layout_reason"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/network_connection_issue"
+                android:textColor="@color/font_gray_98"
+                android:textSize="@dimen/text_size_14"/>
+
+            <TextView
+                android:id="@+id/network_settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sel_common_btn_bg"
+                android:text="@string/network_settings"
+                android:textColor="@color/font_gray_deep"
+                android:textSize="@dimen/text_size_14"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_error2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="8dp"
+            android:text="@string/web_exception"
+            android:textColor="@color/font_gray_98"
+            android:textSize="@dimen/text_size_14"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/refresh"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/error_retry_btn_bg"
+        android:text="@string/refresh_retry"
+        android:textColor="@color/theme_color"
+        android:textSize="@dimen/text_size_14"/>
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/common_height_small"
+    android:paddingRight="@dimen/common_horizon_margin"
+    android:gravity="center_vertical"
+    android:background="@drawable/bg_condition_item">
+    <View
+        android:id="@+id/left_iv"
+        android:layout_width="3dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/popop_left_icon_sel"
+        />
+<TextView
+    android:id="@+id/condition_tv"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/popup_mul_condition_textcolor"
+    android:textSize="@dimen/text_size_13"
+    tools:text="西餐厅"
+    android:layout_weight="1"
+    android:layout_marginLeft="@dimen/common_horizon_margin"
+    />
+    <ImageView
+        android:id="@+id/right_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrow_right_gray"
+        android:visibility="gone"/>
+</LinearLayout>

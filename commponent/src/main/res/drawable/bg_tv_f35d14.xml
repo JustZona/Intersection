@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Style for "2" -->
+<!-- Add this snippet to layer-list xml in drawable. -->
+<shape android:shape="rectangle"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="2dp" />
+        <solid android:color="#fff35d14" />
+    </shape>
+

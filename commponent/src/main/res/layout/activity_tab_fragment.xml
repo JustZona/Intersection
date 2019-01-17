@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg">
+   <!-- <include
+        android:id="@+id/titlebar"
+        layout="@layout/main_titlebar"
+        />android:layout_below="@id/titlebar"-->
+    <com.rent.zona.commponent.views.AppViewPager
+        android:id="@+id/tab_viewpager1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tab_layout"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shadow_top"
+        android:layout_above="@id/tab_layout"/>
+    <android.support.design.widget.TabLayout
+        android:id="@id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_height"
+        android:clipToPadding="false"
+        android:clipChildren="false"
+        android:layout_alignParentBottom="true"
+        app:tabBackground="@color/white"
+        app:tabTextColor="@color/tab_text_color"
+        android:background="@color/white"
+        app:tabTextAppearance="@dimen/text_size_11"
+        app:tabSelectedTextColor="@color/tab_text_select_color"
+        app:tabIndicatorHeight="0dp"/>
+
+
+    <!--设置Tab指示器
+    app:tabIndicatorColor=""
+    app:tabIndicatorHeight=""-->
+
+    <!--设置Tab位置及显示模式
+    app:tabGravity=""
+    app:tabMode=""-->
+
+    <!--设置Tab文字样式
+    app:tabSelectedTextColor=""
+    app:tabTextAppearance=""
+    app:tabTextColor=""-->
+
+    <!--设置Tab的宽度、背景、内间距
+    app:tabMaxWidth=""
+    app:tabMinWidth=""
+    app:tabBackground=""
+    app:tabPadding=""-->
+</RelativeLayout>

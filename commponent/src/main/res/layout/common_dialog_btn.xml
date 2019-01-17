@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/MyWidget.DialogButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_dialog_btn_height">
+
+</Button>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/sel_list_item_white_bg"
+    android:minHeight="@dimen/common_height">
+
+    <ImageView
+        android:id="@+id/view_left_icon"
+        android:layout_width="@dimen/ic_2"
+        android:layout_height="@dimen/ic_2"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/item_list_row_height"
+        android:layout_marginRight="@dimen/item_list_row_height"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/view_left_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_dark"
+        android:textColorHint="@color/light_gray"
+        android:layout_toRightOf="@id/view_left_icon"
+        android:layout_marginLeft="@dimen/item_list_row_height"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/text_size_16"
+        android:visibility="gone"/>
+    <!-- android:textSize="@dimen/text_size_16"-->
+    <LinearLayout
+        android:id="@+id/ll_text_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/item_list_row_height"
+        android:layout_toRightOf="@id/view_left_text"
+        android:layout_toLeftOf="@+id/view_right_icon"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/view_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/common_dark"
+            android:textColorHint="@color/light_gray"
+            android:textSize="@dimen/text_size_16"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text=""/>
+
+        <EditText
+            android:id="@+id/view_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/common_dark"
+            android:textColorHint="@color/light_gray"
+            android:background="@null"
+            android:textSize="@dimen/text_size_16"
+            android:maxLines="1"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/view_descript_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/item_list_text_space"
+            android:textColor="@color/light_gray"
+            android:textSize="@dimen/text_size_14"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <com.rent.zona.commponent.views.AutoTextSizeView
+        android:id="@+id/view_right_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/item_list_content_padding_s"
+        android:layout_toRightOf="@id/view_left_text"
+        android:layout_toLeftOf="@+id/view_right_icon"
+        android:gravity="right"
+        android:maxLines="1"
+        android:textColor="@color/light_gray"
+        android:textSize="@dimen/text_size_14"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/view_right_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/item_list_row_height"
+        android:src="@drawable/ic_arrow_right"/>
+
+    <ImageView
+        android:id="@+id/view_tip_dot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:layout_toLeftOf="@id/view_right_icon"
+        android:src="@drawable/icon_tip_dot"
+        android:visibility="invisible"/>
+
+    <com.rent.zona.commponent.views.SwitchButton
+        android:id="@+id/switch_button"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="gone"/>
+    <!--    style="@style/SwitchButtonMD"-->
+</RelativeLayout>

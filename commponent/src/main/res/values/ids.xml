@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="root_container"/>
+    <item type="id" name="progress_container"/>
+    <item type="id" name="list_container"/>
+    <item type="id" name="empty"/>
+    <item type="id" name="pullrefreshview"/>
+    <item type="id" name="loadmoreview"/>
+    <item type="id" name="webview"/>
+
+    <item type="id" name="left_title_bar"/>
+    <item type="id" name="right_title_bar"/>
+    <item type="id" name="layout_pull_down"/>
+
+    <item name="left_nav_bar_item" type="id"/>
+    <item name="right_nav_bar_item" type="id"/>
+
+    <!--二维码扫描-->
+    <item type="id" name="decode"/>
+    <item type="id" name="decode_failed"/>
+    <item type="id" name="decode_succeeded"/>
+    <item type="id" name="launch_product_query"/>
+    <item type="id" name="quit"/>
+    <item type="id" name="restart_preview"/>
+    <item type="id" name="return_scan_result"/>
+    <item type="id" name="swipe"/>
+
+
+
+    <item type="id" name="tab_viewpager"/>
+    <item type="id" name="tab_layout"/>
+</resources>

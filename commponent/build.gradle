@@ -1,0 +1,109 @@
+apply plugin: 'com.android.library'
+apply plugin: 'me.tatarka.retrolambda'
+
+android {
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+//        jackOptions {
+//            enabled true
+//        }
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath = true
+            }
+        }
+       /* //高德key
+        manifestPlaceholders = [
+                AMAP_KEY: "",
+                UMENG_APPKEY:"",//"${ACCOUNT}"  UMENG_APPKEY.toString()
+                qqappid:"",
+                QQ_KEY:"",
+                WINXIN_ID:"",
+                WINXIN_KEY:"",
+                SINA_WEIBO_KEY:"",
+                SINA_WEIBO_SECRET:"",
+                SINA_WEIBO_REDIRECTURL:"",
+                BUGLY_APP_ID:"",
+                BUGLY_APP_KEY:""
+
+
+        ]*/
+        /*manifestPlaceholders = [BUILD_TIME_VALUE: new Date().format('yyyyMMdd'),
+                               JPUSH_KEY_VALUE: '88888888']*/
+        ndk {
+            abiFilters 'armeabi', 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64', 'mips', 'mips64'
+        }
+
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+//    greendao {
+//        schemaVersion 1
+//        daoPackage 'com.rent.qft.gen'
+//        targetGenDir 'src/main/java'
+//    }
+    //设置了resourcePrefix值后，所有的资源名必须以指定的字符串做前缀，否则会报错。
+    //但是resourcePrefix这个值只能限定xml里面的资源，并不能限定图片资源，所有图片资源仍然需要手动去修改资源名。
+//    resourcePrefix 'com_'
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+//    testImplementation 'junit:junit:4.12'
+//    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+//    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    compile project(':baselib')
+    //兼容状态栏
+    compile 'com.readystatesoftware.systembartint:systembartint:1.0.4'
+    compile 'com.wang.avi:library:2.1.3'
+    compile 'org.greenrobot:greendao:3.2.2'
+    //没有使用特殊Header，可以不加这行
+    compile 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-5'
+    compile 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-alpha-5'
+    compile 'com.justkiddingbaby:slidemenu:1.3.0'
+    //侧滑菜单栏
+    //极光推送
+//    compile 'cn.jiguang.sdk:jpush:3.1.2'
+//     此处以JPush 3.1.1 版本为例。
+//    compile 'cn.jiguang.sdk:jcore:1.2.0'
+    // 此处以JCore 1.1.9 版本为例。
+    //友盟分享
+    compile 'com.umeng.sdk:share-core:6.9.1'
+    //分享核心代码
+//    compile 'com.umeng.sdk:share-qq:6.9.1.1'
+    //qq分享
+//    compile 'com.umeng.sdk:share-wechat:6.9.1'
+    //微信分享
+    compile 'com.umeng.sdk:share-sina:6.9.1'
+    //新浪分享
+    compile 'com.umeng.sdk:shareboard-widget:6.9.1'
+    //分享面板
+    compile 'com.umeng.sdk:common:1.5.1'
+    //公共组件
+    compile 'com.umeng.sdk:debug:1.0.0'
+
+    compile 'com.jakewharton:butterknife:8.8.1'
+//    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    compile 'com.github.PhilJay:MPAndroidChart:v3.0.3'
+}
