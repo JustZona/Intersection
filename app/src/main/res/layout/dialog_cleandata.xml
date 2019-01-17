@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_half_transparent"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/notCleanData_linear"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/height10"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/height10"
+        android:layout_marginRight="@dimen/height10"
+        android:background="@drawable/round_rectangle_white_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="确定删除所有缓存？离线图片均会被清除"
+            android:textSize="@dimen/size13" />
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/gray1"
+            android:layout_height="1dp"></View>
+        <Button
+            android:id="@+id/sureCleanData_button"
+            android:layout_width="match_parent"
+            android:background="@drawable/round_rectangle_white_bg"
+            android:text="确定"
+            android:textColor="@color/f35d14"
+            android:textSize="@dimen/size13"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+        <Button
+            android:id="@+id/cancelCleanData_button"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/round_rectangle_white_bg"
+            android:layout_marginLeft="@dimen/height10"
+            android:layout_marginRight="@dimen/height10"
+            android:layout_marginBottom="@dimen/height10"
+            android:textSize="@dimen/size13"
+            android:text="取消"
+            android:textColor="@color/f35d14" />
+
+</LinearLayout>

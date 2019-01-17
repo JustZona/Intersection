@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+//corners 四个角度
+    <corners
+        android:radius="3dp"
+        android:bottomLeftRadius="5dp"
+        android:bottomRightRadius="5dp"
+        android:topLeftRadius="5dp"
+        android:topRightRadius="5dp">
+    </corners>
+   //gradient 渐变色
+    //solid 纯色填充
+    <solid
+        android:color="@color/white">
+
+    </solid>
+    //stroke shape描边
+    //背景空白大小 padding
+    //size 固有宽度 高度
+</shape>

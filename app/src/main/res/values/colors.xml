@@ -6,6 +6,7 @@
     <color name="transparent">#00000000</color>
     <color name="gray1">#eeeeee</color>
     <color name="gray2">#e4e3e3</color>
+    <color name="FF4A25">#FF4A25</color>
     <color name="normal_bg_color">#999</color>
     <color name="pressed_bg_color">#3839de</color>
 </resources>
