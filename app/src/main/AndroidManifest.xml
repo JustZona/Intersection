@@ -10,14 +10,20 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".activities.MainActivity">
+
+        </activity>
+        <activity android:name=".activities.LoginAndRegisterActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activities.LoginAndRegisterActivity"></activity>
-        <activity android:name=".activities.SettingActivity"></activity>
+        <activity android:name=".activities.SettingActivity" />
+        <activity android:name=".activities.AccountSafeActivity" />
+        <activity android:name=".activities.ChangePhoneActivity" />
+        <activity android:name=".activities.UpdatePwdActivity" />
+        <activity android:name=".activities.BlackListActivity"></activity>
     </application>
 
 </manifest>

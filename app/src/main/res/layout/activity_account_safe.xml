@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray1"
+    tools:context=".activities.AccountSafeActivity">
+    <include
+        android:id="@+id/titlebar"
+        layout="@layout/main_titlebar" />
+    <RelativeLayout
+        android:id="@+id/change_phone_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height50"
+        android:paddingLeft="@dimen/height17"
+        android:paddingRight="@dimen/height18"
+        android:layout_marginTop="@dimen/height10"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="更换手机号"
+            android:textColor="@color/common_dark"
+            android:textSize="@dimen/size15" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/update_psd_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height50"
+        android:paddingLeft="@dimen/height17"
+        android:paddingRight="@dimen/height18"
+        android:layout_marginTop="@dimen/height1"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="修改密码"
+            android:textColor="@color/common_dark"
+            android:textSize="@dimen/size15" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

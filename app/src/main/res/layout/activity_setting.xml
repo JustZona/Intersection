@@ -128,7 +128,7 @@
     <TextView
         android:id="@+id/set_outLogin_tv"
         android:layout_width="@dimen/height251"
-        android:layout_height="@dimen/height34"
+        android:layout_height="@dimen/height50"
         android:layout_alignParentLeft="true"
         android:layout_gravity="center"
         android:gravity="center"

@@ -82,8 +82,10 @@ public class SettingActivity extends BaseActivity {
                 gotoNotificationSetting(this);
                 break;
             case R.id.set_account_rl://账号与安全
+                AccountSafeActivity.launch(this);
                 break;
             case R.id.set_Blacklist_rl://黑名单
+
                 break;
             case R.id.set_feedback_rl://意见与反馈
                 break;
