@@ -23,11 +23,13 @@
     <dimen name="height20">20dp</dimen>
     <dimen name="height21">21dp</dimen>
     <dimen name="height22">22dp</dimen>
+    <dimen name="height25">25dp</dimen>
     <dimen name="height27">27dp</dimen>
     <dimen name="height30">30dp</dimen>
     <dimen name="height31">31dp</dimen>
     <dimen name="height34">34dp</dimen>
     <dimen name="height37">37dp</dimen>
+    <dimen name="height40">40dp</dimen>
     <dimen name="height41">41dp</dimen>
     <dimen name="height45">45dp</dimen>
     <dimen name="height47">47dp</dimen>
@@ -37,6 +39,8 @@
     <dimen name="height52">52dp</dimen>
     <dimen name="height56">56dp</dimen>
     <dimen name="height60">60dp</dimen>
+    <dimen name="height63">63dp</dimen>
+    <dimen name="height64">64dp</dimen>
     <dimen name="height65">65dp</dimen>
     <dimen name="height68">68dp</dimen>
     <dimen name="height70">70dp</dimen>
@@ -79,6 +83,7 @@
     <dimen name="height400">400dp</dimen>
     <dimen name="height500">500dp</dimen>
     <!--字体-->
+    <dimen name="size9">9dp</dimen>
     <dimen name="size11">11dp</dimen>
     <dimen name="size12">12dp</dimen>
     <dimen name="size13">13dp</dimen>

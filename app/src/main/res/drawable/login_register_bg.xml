@@ -3,7 +3,8 @@
   >
     <size android:height="9999dp"></size>
 <corners android:radius="9999dp"></corners>
-    <solid android:color="@color/themeColor"></solid>
+    <solid android:color="@color/common_dark"></solid>
+
     //这里要弄渐变色 深色-浅色3839de 4f4ee0 6664e5
 
 </shape>

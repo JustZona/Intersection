@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+  >
+    <size android:height="9999dp"></size>
+<corners android:radius="9999dp"></corners>
+    <gradient android:angle="135"
+        android:startColor="#3839de"
+        android:centerColor="#4f4ee0"
+        android:endColor="#6664e5"
+        android:type="linear"></gradient>
+
+    //这里要弄渐变色 深色-浅色3839de 4f4ee0 6664e5
+
+</shape>
